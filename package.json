@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "ht-pro1",
+=======
+  "name": "ht-prj",
+>>>>>>> asf
   "version": "0.0.0",
   "private": true,
   "scripts": {
