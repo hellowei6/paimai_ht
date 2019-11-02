@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-<<<<<<< HEAD
+
 /* GET home page. */
 
 
@@ -209,10 +209,7 @@ router.get('/navList', function (req, res, next) {
         "文玩收藏",
     ]
     res.send(arr);
-=======
-/* GET users listing. */
-<<<<<<< HEAD
-
+})
 // 所有分类
 router.get('/allCateList',function(req,res,next){
     var cates=[
@@ -258,12 +255,11 @@ router.get('/allCateList',function(req,res,next){
         }
     ]
     res.send(cates);
->>>>>>> asf
+
 });
 
 
 
-<<<<<<< HEAD
 //直播
 router.get('/liveList', function (req, res, next) {
     var arr = [{
@@ -920,8 +916,7 @@ router.get('/fourList', function (req, res, next) {
     ]
     res.send(arr);
 })
-module.exports = router;
-=======
+
 
 //
 router.get('/shoppingList', function (req, res, next) {
@@ -1483,9 +1478,7 @@ router.get('/shoppingList', function (req, res, next) {
     res.send(shoppingList);
 });
 
-module.exports = router;
 
-=======
 router.get('/focusShopping', function (req, res, next) {
     var focusShopping = [
 
@@ -1748,5 +1741,4 @@ router.get('/focusShopping', function (req, res, next) {
     res.send(focusShopping);
 });
 module.exports = router;
->>>>>>> asf
->>>>>>> asf
+
