@@ -3,11 +3,19 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+<<<<<<< HEAD
 var cors = require('cors');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var dangRouter = require('./routes/dangdang');
+=======
+const cors = require('cors');
+
+var indexRouter = require('./routes/index');
+var usersRouter = require('./routes/users');
+var aliRouter = require('./routes/ali');
+>>>>>>> asf
 
 var app = express();
 app.use(cors());
@@ -20,6 +28,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+<<<<<<< HEAD
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
@@ -27,11 +36,23 @@ app.use('/dang', dangRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
+=======
+app.use('/', indexRouter);
+app.use('/users', usersRouter);
+app.use('/ali', aliRouter);
+
+// catch 404 and forward to error handler
+app.use(function(req, res, next) {
+>>>>>>> asf
   next(createError(404));
 });
 
 // error handler
+<<<<<<< HEAD
 app.use(function (err, req, res, next) {
+=======
+app.use(function(err, req, res, next) {
+>>>>>>> asf
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
